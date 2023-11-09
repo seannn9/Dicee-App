@@ -27,6 +27,6 @@ flutter:
     - images/
 
   fonts:
-    - family: Acme
+    - family: Poppins
       fonts:
-        - asset: fonts/Acme-Regular.ttf
+        - asset: fonts/Poppins-Regular.ttf
