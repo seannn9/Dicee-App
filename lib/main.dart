@@ -5,7 +5,7 @@ void main() {
   return runApp(
       MaterialApp(
           home: Scaffold(
-            backgroundColor: Colors.blue[600],
+            backgroundColor: Colors.blueAccent,
             appBar: AppBar(
               title: const Text('Dicee'),
               backgroundColor: Colors.blue[900],
@@ -38,14 +38,14 @@ class _DicePageState extends State<DicePage> {
               Expanded(child: Padding(
                   padding: const EdgeInsets.symmetric(vertical: 0.0, horizontal: 16.0),
                   child: Text("Score: $leftScore", style: const TextStyle(
-                    fontFamily: 'Acme',
+                    fontFamily: 'Poppins',
                     fontSize: 25.0,
                   ),)
               )),
               Expanded(child: Padding(
                 padding: const EdgeInsets.symmetric(vertical: 0.0, horizontal: 16.0),
                 child: Text("Score: $rightScore", style: const TextStyle(
-                    fontFamily: 'Acme',
+                    fontFamily: 'Poppins',
                     fontSize: 25.0
                 )),
               ))
@@ -79,15 +79,15 @@ class _DicePageState extends State<DicePage> {
           Text("The total roll is $sum",
               style: const TextStyle(
                 fontSize: 25.0,
-                fontFamily: "Acme",
+                fontFamily: "Poppins",
               )),
           Text(getWinner(),
               style: const TextStyle(
                 fontSize: 25.0,
-                fontFamily: "Acme",
+                fontFamily: "Poppins",
               )),
           Padding(
-            padding: const EdgeInsets.symmetric(vertical: 8.0, horizontal: 0.0),
+            padding: const EdgeInsets.symmetric(vertical: 20.0, horizontal: 0.0),
             child: FilledButton(onPressed: () {
               setState(() {
                 left = 1;
